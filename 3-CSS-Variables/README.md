@@ -1,5 +1,7 @@
 # CSS-Variables
 
+Project 3/30: Javascript manipulating CSS variables.
+
 ![](css-vars.gif)
 
 ## Key concepts:
