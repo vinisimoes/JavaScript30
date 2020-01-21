@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: url(./images/background_img.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+
+.clock-container {
+    display: flex;
+    justify-content: center;
+}
+
+.clock-container .clock {
+    background: transparent;
+    height: 200px;
+    width: 200px;
+    border: 4px solid rgb(116, 116, 116);
+    border-radius: 50%;
+    margin: 40px;
+    box-shadow: 0 0 3px #000000;
+    position: relative; /*This is important to allow superimposing divs*/
+}
+
+.clock-container .clock .hand {
+    background: #000000;
+    border-radius: 10px;
+    position: absolute; /*This is important to allow superimposing divs*/
+    top: 50%;
+    left: 50%;
+    transform: translateY(50%);
+    transform-origin: left; 
+    /*transition: all 0.5s;
+    transition-timing-function: cubic-bezier(.7,.29,.44,1.44);*/
+}
+
+.clock-container .clock .hour {
+    width: 60px;
+    height: 5px;
+}
+
+.clock-container .clock .minute {
+    width: 80px;
+    height: 4px;
+}
+
+.clock-container .clock .second {
+    background: red;
+    width: 85px;
+    height: 3px;
+}
+
+.clock-container .pin {
+    background: #000000;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    /*Vertical and horizontal alignment*/
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
