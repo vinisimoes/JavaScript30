@@ -2,7 +2,9 @@
 
 Project 2/30: CSS + Javascript clock.
 
-![](clock.gif)
+<p align="center">
+ <img src="clock.gif">
+</p>
 
 ## Key concepts:
 
