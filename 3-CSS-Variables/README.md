@@ -2,7 +2,9 @@
 
 Project 3/30: Javascript manipulating CSS variables.
 
-![](css-vars.gif)
+<p align="center">
+  <img src="css-vars.gif">
+</p>
 
 ## Key concepts:
 
