@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background: #ff8431c9;
+}
+
+.panels {
+    min-height: 100vh;
+    overflow: hidden; /*Avoid scrolling*/
+    display: flex;
+}
+
+.panel {
+    background: #6b0f9c;
+    box-shadow: inset 0 0 10px 5px rgba(0,0,0,0.2);
+    color: white;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.5s;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /*To vertically (along the main axis) center the panel content*/
+    align-items: center; /*To horizontally (along the cross axis) center the panel content*/
+    flex: 1; /*Allow flex items to be evenly distributed*/
+}
+
+.panel1 {
+    background-image: url(./images/panel1.jpg);
+}
+
+.panel2 {
+    background-image: url(./images/panel2.jpg);
+}
+
+.panel3 {
+    background-image: url(./images/panel3.jpg);
+}
+
+.panel4 {
+    background-image: url(./images/panel4.jpg);
+}
+
+.panel5 {
+    background-image: url(./images/panel5.jpg);
+}
+
+/*Direct children of .panel (because it is a flex)*/
+.panel > * {
+    width: 100%;
+    transition: transform 0.5s;
+    flex: 1 0 auto; /* flex-grow | flex-shrink | flex-basis */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel > *:first-child {transform: translateY(-100%);}
+.panel.open-text > *:first-child {transform: translateY(0);}
+.panel > *:last-child {transform: translateY(100%);}
+.panel.open-text > *:last-child{transform: translateY(0);}
+
+.panel p {
+    font-family: 'Amatic SC', cursive;
+    font-size: 40px;
+    font-weight: 200;
+    text-transform: uppercase;
+    text-shadow: 0 0 4px rgba(0,0,0,1); /* deslocamento-x | deslocamento-y | raio-de-desfoque | cor */
+}
+
+.panel p:nth-child(2) {
+    font-size: 5em;
+}
+
+.panel.open-image {
+    flex: 4;
+    font-size: 1.5em;
+}
