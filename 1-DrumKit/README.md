@@ -31,7 +31,7 @@ Project 1/30: Javascript DrumKit with animation and sound.
    ```
  - Box shadow:
     ```
-    box-shadow: inset 0 0 5px #000000; /*hprizontal vertical blur-radius color*/
+    box-shadow: inset 0 0 5px #000000; /*horizontal vertical blur-radius color*/
     ```
    
 ### JS:
