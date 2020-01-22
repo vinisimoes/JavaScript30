@@ -1,3 +1,4 @@
 # Image gallery
 
-![](img-gallery.gif)
+<img src="img-gallery.gif">
+
