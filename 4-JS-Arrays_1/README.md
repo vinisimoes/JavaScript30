@@ -1,10 +1,10 @@
 # Array manipulation in JS
 
 ## .filter() : ``` Array.prototype.fiter(function) ```
-Evaluate *function()* for each element of the array and keep the element if it returns *true*.
+Evaluates *function()* for each element of the array and keep the element if it returns *true*.
 
 ## .map() : ```Array.prototype.map(function)```
-Evaluate *function()* for each element of the array and create a new array based on the manipulation returned by *function()*.
+Evaluates *function()* for each element of the array and create a new array based on the manipulation returned by *function()*.
 
 ## .sort() : ```Array.prototype.sort(function)```
 The function has generally the following structure :
