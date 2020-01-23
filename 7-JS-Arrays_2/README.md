@@ -10,4 +10,4 @@ Evaluates *function()* for each element of the array and returns *true* if **eve
 Returns the **value** of the first element in the array where predicate is true, and undefined otherwise.
 
 ## .findIndex() : ```Array.prototype.findIndex(function)```
-Returns the **index** of the first element in the array where predicate is true, and undefined otherwise.
+Returns the **index** of the first element in the array where predicate is true, and -1 otherwise.
